@@ -1,0 +1,98 @@
+/* Your styles */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+div{
+    display: block;
+}
+#ques{
+    width: 100%;
+}
+.rating{
+    border: solid grey 1px;
+    padding:20px;
+}
+.rating:hover{
+    border: solid white 1px;
+    color: white;
+    background-color: #444242;
+}
+.rating:focus{
+    border: solid white 1px;
+    color: white;
+    background-color: #444242;
+}
+
+.header{
+    /* width: 100%; */
+    background-color: #3F51B5;
+    color:#F5F6FB;
+    padding:10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.title{
+    font-size: larger;
+    cursor: pointer;
+    font-family: 'Open Sans Condensed',sans-serif;
+    padding: 5px;
+    outline:none;
+}
+.title:hover{
+    background-color: #233abe;
+    border-radius: 5px;
+}
+.title:active{
+    background-color: #233abe;
+    border-radius: 5px;
+}
+.header a{
+    background-color: #3F51B5;
+    color:#F5F6FB;
+    padding:5px;
+    margin: 5px;
+    line-height: 30px;
+    font-size: medium;
+}
+.header a:hover{
+    background-color: #233abe;
+    border-radius: 5px;
+}
+.textField{
+    width: 400px;
+    margin: 20px;
+}
+
+.inputText{
+    width:500px;
+}
+
+.inputFields {
+    display:flex;
+    justify-content:space-between;
+    padding:20px;
+}
+
+.submit{
+    background-color: #F0632C;
+    color: white;
+    font-size: large;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px  10px 20px;
+    margin: 10px;
+}
+
+.submit:disabled{
+    background-color: #ee9d7c;
+}
+
+@media screen and (max-width:800px){
+    form{
+        width: 99%;
+        border: none;
+    }
+    .inputText{
+        width:100%;
+    }
+}
